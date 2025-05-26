@@ -1,0 +1,24 @@
+{
+  "name": "wasm-server",
+  "version": "2025.4.0",
+  "description": "A simple app for serving an wasm package.",
+  "type": "module",
+  "scripts": {
+    "start": "tsc -p . && node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkSumCode/wasm-server.git"
+  },
+  "keywords": [],
+  "author": "Markus Dick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArkSumCode/wasm-server/issues"
+  },
+  "homepage": "https://github.com/ArkSumCode/wasm-server#readme",
+  "dependencies": {
+    "@types/express": "^5.0.2",
+    "express": "^5.1.0"
+  }
+}
