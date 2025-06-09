@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Markus Title</title>
+    <title>WASM TERMINAL</title>
   </head>
   <body>
-    <h1>Markussss</h1>
+    <h1>Terminal:</h1>
     <div id="terminal"></div>
-    <script src="app.js"></script>
+    <script type="module">
+      import init, { hello } from "/pkg/wasm_template.js";
+
+      init().then(() => {
+        console.log(hello());
+      });
+    </script>
   </body>
 </html>
